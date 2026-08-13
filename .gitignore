@@ -1,0 +1,20 @@
+# --- Auxiliares de LaTeX ---
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# --- IMPORTANTE ---
+# main.pdf NO se ignora: el PDF compilado es un entregable obligatorio del examen
+# y debe quedar versionado en el repositorio.
+
+# --- Sistema operativo / editores ---
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
