@@ -50,6 +50,6 @@ En Windows (MiKTeX o TeX Live) los paquetes se instalan bajo demanda en la prime
 
 ## Pendiente antes de entregar
 
-1. Completar los campos **Estudiante** y **Fecha** de la cabecera.
+1. ~~Completar los campos **Estudiante** y **Fecha** de la cabecera.~~ Hecho.
 2. Agregar la carátula con la URL del repositorio en una sola línea.
 3. Insertar las capturas del resumen y del intento del cuestionario del SGA.
