@@ -42,6 +42,9 @@
 
 % ── Añadidos para el desarrollo (P1--P5) ─────────────────────────────
 \usepackage{float}
+% Carátula: se incrusta caratula.pdf como primera página desde el propio .tex,
+% de modo que se regenere en cada compilación (reproducible al clonar el repo).
+\usepackage{pdfpages}
 \usetikzlibrary{shapes.geometric,shapes.multipart,arrows.meta,positioning,calc,fit,backgrounds}
 \tikzset{
   clase/.style={rectangle split, rectangle split parts=3, draw, very thin,
@@ -114,6 +117,10 @@
 % =====================================================================
 \begin{document}
 \sffamily
+
+% ── Carátula (datos de identificación, URL del repositorio en una sola
+%    línea y capturas del cuestionario del SGA) ──────────────────────
+\includepdf[pages=-]{caratula.pdf}
 
 % ── Portada breve / cabecera del instrumento ─────────────────────────
 \begin{center}

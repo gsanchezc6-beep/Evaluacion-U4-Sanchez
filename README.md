@@ -11,12 +11,18 @@ de las actividades **P1 a P5**, cada una inmediatamente debajo de su enunciado.
 ```
 .
 ├── main.tex          # archivo principal (único .tex que se compila)
+├── caratula.pdf      # carátula: identificación, URL del repositorio y capturas del SGA
 ├── referencias.bib   # bibliografía (natbib / plainnat)
 ├── figuras/
 │   └── P3-maquina-estados-cita_drawio.png
 ├── main.pdf          # PDF compilado
+├── .gitignore
 └── README.md
 ```
+
+La carátula se incrusta como primera página desde el propio `main.tex` mediante
+`\includepdf` (paquete `pdfpages`), de modo que se regenera en cada compilación.
+Por eso `caratula.pdf` debe estar presente al compilar.
 
 ## Compilación
 
@@ -36,8 +42,8 @@ Salida esperada: `main.pdf`.
 `inputenc`, `fontenc`, `helvet`, `textcomp`, `geometry`, `amsmath`, `amssymb`, `graphicx`,
 `xcolor`, `array`, `tabularx`, `multirow`, `colortbl`, `booktabs`, `enumitem`, `microtype`,
 `parskip`, `titlesec`, `fancyhdr`, `caption`, `pdflscape`, `natbib`, `hyperref`, `tcolorbox`,
-`float`, `tikz` (librerías `shapes.geometric`, `shapes.multipart`, `arrows.meta`, `positioning`,
-`calc`, `fit`, `backgrounds`).
+`float`, `pdfpages`, `tikz` (librerías `shapes.geometric`, `shapes.multipart`, `arrows.meta`,
+`positioning`, `calc`, `fit`, `backgrounds`).
 
 Instalación en Debian/Ubuntu:
 
@@ -47,9 +53,3 @@ sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommende
 ```
 
 En Windows (MiKTeX o TeX Live) los paquetes se instalan bajo demanda en la primera compilación.
-
-## Pendiente antes de entregar
-
-1. ~~Completar los campos **Estudiante** y **Fecha** de la cabecera.~~ Hecho.
-2. Agregar la carátula con la URL del repositorio en una sola línea.
-3. Insertar las capturas del resumen y del intento del cuestionario del SGA.
